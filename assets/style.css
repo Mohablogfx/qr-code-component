@@ -1,0 +1,88 @@
+/* outfit-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/outfit-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/outfit-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 14px);
+    background-color: var(--slate-300);
+}
+
+.card {
+    background-color: var(--white);
+    max-width: 320px;
+    border-radius: 20px;
+    padding: 16px 16px 40px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .card-content {
+    margin-top: 24px;
+    padding-inline: 16px;
+}
+
+.card-content h2 {
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--slate-900);
+}
+
+.card-content p {
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+    color: var(--slate-500);
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    background-color: var(--slate-900);
+    color: var(--white);
+}
+
+.attribution a {
+    color: var(--slate-300);
+}
